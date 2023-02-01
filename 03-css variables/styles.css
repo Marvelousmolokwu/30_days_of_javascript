@@ -1,0 +1,36 @@
+:root{
+    --base: #f06f06;
+    --spacing:10px;
+    --blur:0px;
+}
+
+img{
+    padding: var(--spacing);
+    background-color: var(--base);
+    filter: blur(var(--blur));
+    max-height: 400px;
+    width: 500px;
+ 
+}
+span{
+    color: var(--base);
+}
+body{
+    text-align: center;
+    background: #000203;
+    color: white;
+    font-family: monospace;
+    font-weight: 50;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.controls{
+    margin-bottom: 50px;
+}
+input{
+    width: 100px;
+}

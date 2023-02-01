@@ -10,9 +10,9 @@ const minutes = now.getMinutes();
 minutesInDegree = ((minutes/  60) * 360)  + 90;
 minutehand.style.transform = `rotate(${minutesInDegree}deg)`
 const hours = now.getHours();
-hourInDegree = ((hours / 12) * 360)  + 90;
+ 
+hourInDegree = ((hours / 12) * 360) + ((minutes/60)*30) + 90;
 hourhand.style.transform = `rotate(${hourInDegree}deg)`
 
 }
 setInterval(setDate, 1000)
-setDate()
