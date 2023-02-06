@@ -47,11 +47,12 @@
       // Array.prototype.findIndex()
       const find_index_of_comment = comments.findIndex((i) => i.id === 823423);
       console.log(find_index_of_comment);
+       // delete the comment with the ID of 823423
       const deleted = comments.splice(find_index_of_comment, 1);
       console.log(deleted);
       console.table(comments);
       // Find the comment with this ID
-      // delete the comment with the ID of 823423
+     
     </script>
   </body>
 </html>
