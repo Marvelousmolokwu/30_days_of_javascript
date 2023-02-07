@@ -14,7 +14,7 @@ function handlecheck(e){
         }
       })
 
-    }
+    } 
 lastChecked = this;
 
 }
