@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Console Tricks</title>
+  </head>
+  <body>
+    <h1 onclick="makeGreen()">trying several console tricks</h1>
+    <script>
+      const dogs = [
+        { name: "snickers", age: 2 },
+        {
+          name: "hugo",
+          age: 8,
+        },
+      ];
+      function makeGreen() {
+        const p = document.querySelector("h1");
+
+        p.style.color = "#BADASS";
+        p.style.fontSize = "50px";
+      }
+      //regular
+      console.log("hello");
+      //interpolated
+      console.log("hello i am a %s string!", "😁");
+      //   styled
+      console.log("%c i am some great text", "font-size:30px");
+      //   warning
+      console.warn("oh no!");
+      // error
+      console.error("shit!");
+      // info
+      console.info("funFact⚡");
+      // testing
+      console.assert(1 === 1, "that is wrong");
+      //   clear
+      //   console.clear();
+      // dir
+      console.dir(dogs);
+      //   grouping together
+      dogs.forEach((dog) => {
+        console.group(`${dog.name}`);
+        console.log(`this is ${dog.name}`);
+        console.log(`${dog.name}`);
+        console.groupEnd(`${dog.name}`);
+      });
+      //   counting
+      console.count("wes");
+      console.count("wes");
+      console.count("wes");
+      console.count("sew");
+      console.count("sew");
+      //   timing
+      //   table
+      console.table(dogs);
+    </script>
+  </body>
+</html>
